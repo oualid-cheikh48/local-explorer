@@ -1,0 +1,193 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+}
+
+/* Bannière météo avec icône et animation */
+.weather-banner {
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 900px;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  animation: slideDown 1s ease;
+}
+
+/* Ajout d'animation de descente pour la météo */
+@keyframes slideDown {
+  from {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Bannière Bonjour avec dégradé stylé */
+.bonjour-banner {
+  margin: 30px auto;
+  padding: 30px;
+  width: 80%;
+  max-width: 900px;
+  background: linear-gradient(to right, #25d366, #128C7E);
+  color: white;
+  border-radius: 15px;
+  font-size: 2em;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1s ease;
+}
+
+/* Contenu principal - activités et chatbot */
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+/* Bloc activités */
+.activities {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Bloc chatbot */
+.chat-container {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Style des activités */
+.activity {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.activity:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Map container avec animation */
+.map-container {
+  margin-top: 30px;
+  width: 80%;
+  height: 400px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  animation: fadeIn 1s ease;
+}
+
+/* Style pour le chatbot - effet WhatsApp */
+.chat-window {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 900px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+/* Messages dans le chatbot */
+.chat-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f0f0f0;
+}
+
+/* Style des messages */
+.message {
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 12px;
+  max-width: 75%;
+}
+
+/* Message de l'utilisateur */
+.user {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Message du bot */
+.bot {
+  background-color: #e0e0e0;
+  align-self: flex-start;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Barre d'entrée du chatbot */
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+/* Champ texte de la barre de chat */
+.chat-input input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+/* Bouton envoyer */
+.chat-input button {
+  padding: 12px 25px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.chat-input button:hover {
+  background-color: #128C7E;
+}
+
+/* Ajout d'animation fadeIn pour les éléments */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-15px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
